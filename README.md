@@ -1,4 +1,4 @@
-# BiomeUtils
+# Minecraft Biome
 
 This library aims to give easy access to the different biomes generations of Minecraft. It is not direct copy of Minecraft
 source code as it has been rewritten from the ground up with optimizations in mind.
@@ -8,7 +8,7 @@ We support release 1.0 to release 1.16.5 (no snapshot support)
 ------
 
 # A few words
-Before using the library, I want to say a few words about OverWorld biome generation in Minecraft. Currently, as it has been 
+Before using the library, I want to say a few words about OverWorld biome generation in Minecraft. Currently, as it has been
 implemented, the biome generation is split up in layers which are stacked together to form the biome generator.
 
 This generator can be split in 4 different part, there is first the legacy stack which starts from `ContinentLayer`
@@ -16,12 +16,12 @@ and ends up at `DeepOceanLayer`.
 
 Then there is a noise layer (`NoiseLayer` scaled 2 times) which is fed into 2 different stack, one for adding
 *new* biomes (starting at `BaseBiomesLayer` and ending at `SmoothScaleLayer`) and the other for the rivers (starting
-at `NoiseToRiverLayer` and ending at `SmoothScaleLayer`). 
+at `NoiseToRiverLayer` and ending at `SmoothScaleLayer`).
 
 The two split stacks are merged inside `RiverLayer` and the last stack with `OceanTemperatureLayer` (for 1.13+) is then initialized,
 scaled 6 times and merged again with the rest.
 
-At this point the biome generator give the biomes at 1/4 the scale of what you would encounter, a last layer is 
+At this point the biome generator give the biomes at 1/4 the scale of what you would encounter, a last layer is
 applied, called `VoronoiLayer` which takes since 1.15 the sha2 hash of the world seed to initialize it.
 This means that this last layer can be done on the client side and save both on server performance and bandwidth.
 
@@ -60,9 +60,9 @@ dependencies {
 
 To use the library, you have a few possible endpoints depending on your usage:
 
-- If you want to programmatically use a dimension please use this method, remember only 3 dimensions exists yet 
+- If you want to programmatically use a dimension please use this method, remember only 3 dimensions exists yet
   (OVERWORLD, NETHER, END)
-  
+
 ```java
 import kaptainwutax.biomeutils.biome.Biome;
 import kaptainwutax.biomeutils.source.BiomeSource;
@@ -76,10 +76,10 @@ Biome biome=biomeSource.getBiome(x,y,z);
 - If you need simply OverWorld biomes then you use it as follows
   - `OverworldBiomeSource#getBiome` will give you the biome as scale 1/1
   - `OverworldBiomeSource#getBiomeForNoiseGen` will give you the biome as scale 1/4 (aka pre-Voronoi)
-  - `OverworldBiomeSource.(base|ocean|noise|variants|biomes|river|full|voronoi)#get` are entry points for different level 
+  - `OverworldBiomeSource.(base|ocean|noise|variants|biomes|river|full|voronoi)#get` are entry points for different level
   in the generator.
 
-The common approach:     
+The common approach:
 ```java
 import kaptainwutax.biomeutils.biome.Biome;
 import kaptainwutax.biomeutils.source.OverworldBiomeSource;
@@ -91,9 +91,9 @@ Biome biome=biomeSource.getBiome(x,y,z); // here y is always 0 no matter what yo
 - If you need to use Nether biome generation you need to do as follows
    - `NetherBiomeSource#getBiome` will give you the biome as scale 1/1
    - `NetherBiomeSource#getBiomeForNoiseGen` will give you the biome as scale 1/4 (aka pre-Voronoi)
-   - `NetherBiomeSource.(full|voronoi)#get` are entry points for different level 
- 
-   
+   - `NetherBiomeSource.(full|voronoi)#get` are entry points for different level
+
+
 ```java
 import kaptainwutax.biomeutils.biome.Biome;
 import kaptainwutax.biomeutils.source.NetherBiomeSource;
@@ -105,9 +105,9 @@ Biome biome=netherBiomeSource.getBiome(x,y,z); // here y matters
 - If you need to use End biome generation you need to do as follows
    - `EndBiomeSource#getBiome` will give you the biome as scale 1/1
    - `EndBiomeSource#getBiomeForNoiseGen` will give you the biome as scale 1/4 (aka pre-Voronoi)
-   - `EndBiomeSource.(full|simplex|voronoi)#get` are entry points for different level 
- 
-   
+   - `EndBiomeSource.(full|simplex|voronoi)#get` are entry points for different level
+
+
 ```java
 import kaptainwutax.biomeutils.biome.Biome;
 import kaptainwutax.biomeutils.source.EndBiomeSource;
