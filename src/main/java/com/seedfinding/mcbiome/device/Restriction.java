@@ -3,7 +3,7 @@ package com.seedfinding.mcbiome.device;
 import com.seedfinding.mcbiome.source.LayeredBiomeSource;
 import com.seedfinding.mcbiome.source.OverworldBiomeSource;
 import com.seedfinding.mcbiome.layer.IntBiomeLayer;
-import kaptainwutax.mcutils.version.MCVersion;
+import com.seedfinding.mccore.version.MCVersion;
 
 import java.util.Collections;
 import java.util.List;

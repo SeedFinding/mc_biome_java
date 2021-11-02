@@ -4,7 +4,7 @@ import com.seedfinding.mcbiome.biome.Biome;
 import com.seedfinding.mcbiome.biome.Biomes;
 import com.seedfinding.mcbiome.layer.composite.CrossLayer;
 import com.seedfinding.mcbiome.layer.IntBiomeLayer;
-import kaptainwutax.mcutils.version.MCVersion;
+import com.seedfinding.mccore.version.MCVersion;
 
 public class IslandLayer extends CrossLayer {
 

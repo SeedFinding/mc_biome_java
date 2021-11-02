@@ -4,9 +4,9 @@ import com.seedfinding.mcbiome.biome.surface.SurfaceConfig;
 import com.seedfinding.mcbiome.biome.surface.builder.SurfaceBuilder;
 import com.seedfinding.mcbiome.source.OverworldBiomeSource;
 import com.seedfinding.mcbiome.source.StaticNoiseSource;
-import kaptainwutax.mcutils.state.Dimension;
-import kaptainwutax.mcutils.util.pos.BPos;
-import kaptainwutax.mcutils.version.MCVersion;
+import com.seedfinding.mccore.state.Dimension;
+import com.seedfinding.mccore.util.pos.BPos;
+import com.seedfinding.mccore.version.MCVersion;
 
 import java.util.Objects;
 import java.util.function.Function;

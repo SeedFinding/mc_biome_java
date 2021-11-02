@@ -23,10 +23,10 @@ import com.seedfinding.mcbiome.layer.water.NoiseToRiverLayer;
 import com.seedfinding.mcbiome.layer.water.OceanTemperatureLayer;
 import com.seedfinding.mcbiome.layer.water.OldRiverInBiomes;
 import com.seedfinding.mcbiome.layer.water.RiverLayer;
-import kaptainwutax.mcutils.state.Dimension;
-import kaptainwutax.mcutils.util.pos.BPos;
-import kaptainwutax.mcutils.version.MCVersion;
-import kaptainwutax.mcutils.version.UnsupportedVersion;
+import com.seedfinding.mccore.state.Dimension;
+import com.seedfinding.mccore.util.pos.BPos;
+import com.seedfinding.mccore.version.MCVersion;
+import com.seedfinding.mccore.version.UnsupportedVersion;
 
 import java.util.function.BiFunction;
 

@@ -3,7 +3,7 @@ package com.seedfinding.mcbiome.layer.end;
 import com.seedfinding.mcbiome.biome.Biomes;
 import com.seedfinding.mcbiome.layer.FloatBiomeLayer;
 import com.seedfinding.mcbiome.layer.IntBiomeLayer;
-import kaptainwutax.mcutils.version.MCVersion;
+import com.seedfinding.mccore.version.MCVersion;
 
 public class EndBiomeLayer extends IntBiomeLayer {
 

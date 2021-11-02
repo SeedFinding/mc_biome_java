@@ -6,9 +6,9 @@ import com.seedfinding.mcbiome.biome.Biomes;
 import com.seedfinding.mcbiome.layer.IntBiomeLayer;
 import com.seedfinding.mcbiome.layer.composite.VoronoiLayer;
 import com.seedfinding.mcbiome.layer.noise.MultiNoiseLayer17;
-import kaptainwutax.mcutils.state.Dimension;
-import kaptainwutax.mcutils.util.pos.BPos;
-import kaptainwutax.mcutils.version.MCVersion;
+import com.seedfinding.mccore.state.Dimension;
+import com.seedfinding.mccore.util.pos.BPos;
+import com.seedfinding.mccore.version.MCVersion;
 
 public abstract class MultiNoiseBiomeSource extends LayeredBiomeSource<IntBiomeLayer> {
 	protected final BiomePoint[] biomePoints;

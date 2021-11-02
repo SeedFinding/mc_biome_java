@@ -1,7 +1,7 @@
 package com.seedfinding.mcbiome.layer;
 
 import com.seedfinding.mcbiome.layer.cache.BoolLayerCache;
-import kaptainwutax.mcutils.version.MCVersion;
+import com.seedfinding.mccore.version.MCVersion;
 
 public abstract class BoolBiomeLayer extends BiomeLayer {
 

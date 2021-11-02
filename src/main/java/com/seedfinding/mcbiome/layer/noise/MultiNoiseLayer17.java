@@ -3,10 +3,10 @@ package com.seedfinding.mcbiome.layer.noise;
 import com.seedfinding.mcbiome.biome.BiomePoint;
 import com.seedfinding.mcbiome.biome.Biomes;
 import com.seedfinding.mcbiome.layer.IntBiomeLayer;
-import kaptainwutax.mcutils.rand.ChunkRand;
-import kaptainwutax.mcutils.util.data.Pair;
-import kaptainwutax.mcutils.version.MCVersion;
-import kaptainwutax.noiseutils.noise.DoublePerlinNoiseSampler;
+import com.seedfinding.mccore.rand.ChunkRand;
+import com.seedfinding.mccore.util.data.Pair;
+import com.seedfinding.mccore.version.MCVersion;
+import com.seedfinding.mcnoise.noise.DoublePerlinNoiseSampler;
 
 import java.util.Arrays;
 import java.util.Comparator;

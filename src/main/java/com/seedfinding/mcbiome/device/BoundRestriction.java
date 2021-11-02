@@ -1,7 +1,7 @@
 package com.seedfinding.mcbiome.device;
 
 import com.seedfinding.mcbiome.layer.IntBiomeLayer;
-import kaptainwutax.mathutils.util.Mth;
+import com.seedfinding.mcmath.util.Mth;
 
 import java.util.Arrays;
 import java.util.List;

@@ -3,11 +3,11 @@ package com.seedfinding.mcbiome.biome.surface.builder;
 import com.seedfinding.mcbiome.biome.Biome;
 import com.seedfinding.mcbiome.biome.surface.SurfaceConfig;
 import com.seedfinding.mcbiome.source.BiomeSource;
-import kaptainwutax.mcutils.block.Block;
-import kaptainwutax.mcutils.block.Blocks;
-import kaptainwutax.mcutils.rand.ChunkRand;
-import kaptainwutax.mcutils.util.data.Pair;
-import kaptainwutax.noiseutils.simplex.OctaveSimplexNoiseSampler;
+import com.seedfinding.mccore.block.Block;
+import com.seedfinding.mccore.block.Blocks;
+import com.seedfinding.mccore.rand.ChunkRand;
+import com.seedfinding.mccore.util.data.Pair;
+import com.seedfinding.mcnoise.simplex.OctaveSimplexNoiseSampler;
 
 public class FrozenOceanSurfaceBuilder extends DefaultSurfaceBuilder {
 	public FrozenOceanSurfaceBuilder(SurfaceConfig surfaceConfig) {

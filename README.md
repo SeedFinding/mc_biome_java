@@ -66,8 +66,8 @@ To use the library, you have a few possible endpoints depending on your usage:
 ```java
 import kaptainwutax.biomeutils.biome.Biome;
 import kaptainwutax.biomeutils.source.BiomeSource;
-import kaptainwutax.mcutils.state.Dimension;
-import kaptainwutax.mcutils.version.MCVersion;
+import com.seedfinding.mccore.state.Dimension;
+import com.seedfinding.mccore.version.MCVersion;
 BiomeSource biomeSource = BiomeSource.of(Dimension.<YOUR_DIMENSION>,MCVersion.vXXX, seed);
 assert biomeSource != null;
 Biome biome=biomeSource.getBiome(x,y,z);
@@ -83,7 +83,7 @@ The common approach:
 ```java
 import kaptainwutax.biomeutils.biome.Biome;
 import kaptainwutax.biomeutils.source.OverworldBiomeSource;
-import kaptainwutax.mcutils.version.MCVersion;
+import com.seedfinding.mccore.version.MCVersion;
 OverworldBiomeSource biomeSource = new OverworldBiomeSource(MCVersion.vXXX, seed);
 Biome biome=biomeSource.getBiome(x,y,z); // here y is always 0 no matter what you pass
 ```
@@ -97,7 +97,7 @@ Biome biome=biomeSource.getBiome(x,y,z); // here y is always 0 no matter what yo
 ```java
 import kaptainwutax.biomeutils.biome.Biome;
 import kaptainwutax.biomeutils.source.NetherBiomeSource;
-import kaptainwutax.mcutils.version.MCVersion;
+import com.seedfinding.mccore.version.MCVersion;
 NetherBiomeSource netherBiomeSource=new NetherBiomeSource(MCVersion.vXXX, seed);
 Biome biome=netherBiomeSource.getBiome(x,y,z); // here y matters
 ```
@@ -111,7 +111,7 @@ Biome biome=netherBiomeSource.getBiome(x,y,z); // here y matters
 ```java
 import kaptainwutax.biomeutils.biome.Biome;
 import kaptainwutax.biomeutils.source.EndBiomeSource;
-import kaptainwutax.mcutils.version.MCVersion;
+import com.seedfinding.mccore.version.MCVersion;
 EndBiomeSource endBiomeSource=new EndBiomeSource(MCVersion.vXXX, seed);
 Biome biome=endBiomeSource.getBiome(x,y,z); // here y is always 0 no matter what you pass
 ```

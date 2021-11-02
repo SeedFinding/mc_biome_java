@@ -2,7 +2,7 @@ package com.seedfinding.mcbiome.layer.scale;
 
 import com.seedfinding.mcbiome.layer.composite.CrossLayer;
 import com.seedfinding.mcbiome.layer.IntBiomeLayer;
-import kaptainwutax.mcutils.version.MCVersion;
+import com.seedfinding.mccore.version.MCVersion;
 
 public class SmoothScaleLayer extends CrossLayer {
 

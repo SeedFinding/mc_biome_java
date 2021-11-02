@@ -3,10 +3,10 @@ package com.seedfinding.mcbiome.biome.surface.builder;
 import com.seedfinding.mcbiome.biome.Biome;
 import com.seedfinding.mcbiome.biome.surface.SurfaceConfig;
 import com.seedfinding.mcbiome.source.BiomeSource;
-import kaptainwutax.mcutils.block.Block;
-import kaptainwutax.mcutils.rand.ChunkRand;
-import kaptainwutax.mcutils.util.data.Quad;
-import kaptainwutax.noiseutils.simplex.OctaveSimplexNoiseSampler;
+import com.seedfinding.mccore.block.Block;
+import com.seedfinding.mccore.rand.ChunkRand;
+import com.seedfinding.mccore.util.data.Quad;
+import com.seedfinding.mcnoise.simplex.OctaveSimplexNoiseSampler;
 
 public class ErodedBadlandsSurfaceBuilder extends BadlandsSurfaceBuilder {
 	public ErodedBadlandsSurfaceBuilder(SurfaceConfig surfaceConfig) {

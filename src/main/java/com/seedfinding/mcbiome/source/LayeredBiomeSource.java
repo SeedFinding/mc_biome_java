@@ -2,7 +2,7 @@ package com.seedfinding.mcbiome.source;
 
 import com.seedfinding.mcbiome.layer.BiomeLayer;
 import com.seedfinding.mcbiome.layer.LayerStack;
-import kaptainwutax.mcutils.version.MCVersion;
+import com.seedfinding.mccore.version.MCVersion;
 
 import java.util.List;
 

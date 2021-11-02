@@ -1,7 +1,7 @@
 package com.seedfinding.mcbiome.biome.surface;
 
-import kaptainwutax.mcutils.block.Block;
-import kaptainwutax.mcutils.block.Blocks;
+import com.seedfinding.mccore.block.Block;
+import com.seedfinding.mccore.block.Blocks;
 
 @SuppressWarnings("unused")
 public class SurfaceConfig {

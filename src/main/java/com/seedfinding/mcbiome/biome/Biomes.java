@@ -1,8 +1,8 @@
 package com.seedfinding.mcbiome.biome;
 
 import com.seedfinding.mcbiome.biome.surface.ConfiguredSurfaceBuilders;
-import kaptainwutax.mcutils.state.Dimension;
-import kaptainwutax.mcutils.version.MCVersion;
+import com.seedfinding.mccore.state.Dimension;
+import com.seedfinding.mccore.version.MCVersion;
 
 import java.util.HashMap;
 import java.util.Map;

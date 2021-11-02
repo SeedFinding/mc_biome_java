@@ -1,7 +1,7 @@
 package com.seedfinding.mcbiome.layer.composite;
 
 import com.seedfinding.mcbiome.layer.IntBiomeLayer;
-import kaptainwutax.mcutils.version.MCVersion;
+import com.seedfinding.mccore.version.MCVersion;
 
 public abstract class CrossLayer extends IntBiomeLayer {
 

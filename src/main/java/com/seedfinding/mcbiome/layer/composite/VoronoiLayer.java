@@ -1,9 +1,9 @@
 package com.seedfinding.mcbiome.layer.composite;
 
 import com.seedfinding.mcbiome.layer.IntBiomeLayer;
-import kaptainwutax.mcutils.rand.seed.SeedMixer;
-import kaptainwutax.mcutils.rand.seed.WorldSeed;
-import kaptainwutax.mcutils.version.MCVersion;
+import com.seedfinding.mccore.rand.seed.SeedMixer;
+import com.seedfinding.mccore.rand.seed.WorldSeed;
+import com.seedfinding.mccore.version.MCVersion;
 
 public class VoronoiLayer extends IntBiomeLayer {
 

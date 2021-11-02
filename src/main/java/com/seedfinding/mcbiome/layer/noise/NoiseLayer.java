@@ -2,7 +2,7 @@ package com.seedfinding.mcbiome.layer.noise;
 
 import com.seedfinding.mcbiome.biome.Biome;
 import com.seedfinding.mcbiome.layer.IntBiomeLayer;
-import kaptainwutax.mcutils.version.MCVersion;
+import com.seedfinding.mccore.version.MCVersion;
 
 public class NoiseLayer extends IntBiomeLayer {
 

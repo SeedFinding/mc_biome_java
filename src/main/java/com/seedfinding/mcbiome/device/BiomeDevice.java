@@ -1,8 +1,8 @@
 package com.seedfinding.mcbiome.device;
 
 import com.seedfinding.mcbiome.source.OverworldBiomeSource;
-import kaptainwutax.mathutils.util.Mth;
-import kaptainwutax.mcutils.version.MCVersion;
+import com.seedfinding.mcmath.util.Mth;
+import com.seedfinding.mccore.version.MCVersion;
 
 import java.util.ArrayList;
 import java.util.List;

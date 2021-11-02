@@ -3,7 +3,7 @@ package com.seedfinding.mcbiome.layer;
 import com.seedfinding.mcbiome.layer.cache.IntLayerCache;
 import com.seedfinding.mcbiome.layer.composite.VoronoiLayer;
 import com.seedfinding.mcbiome.layer.scale.ScaleLayer;
-import kaptainwutax.mcutils.version.MCVersion;
+import com.seedfinding.mccore.version.MCVersion;
 
 public abstract class IntBiomeLayer extends BiomeLayer {
 

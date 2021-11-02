@@ -7,8 +7,8 @@ import com.seedfinding.mcbiome.layer.land.ContinentLayer;
 import com.seedfinding.mcbiome.layer.noise.NoiseLayer;
 import com.seedfinding.mcbiome.layer.scale.ScaleLayer;
 import com.seedfinding.mcbiome.layer.water.RiverLayer;
-import kaptainwutax.mcutils.rand.seed.SeedMixer;
-import kaptainwutax.mcutils.version.MCVersion;
+import com.seedfinding.mccore.rand.seed.SeedMixer;
+import com.seedfinding.mccore.version.MCVersion;
 
 public abstract class BiomeLayer {
 

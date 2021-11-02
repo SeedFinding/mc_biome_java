@@ -4,8 +4,8 @@ import com.seedfinding.mcbiome.biome.Biome;
 import com.seedfinding.mcbiome.biome.surface.SurfaceConfig;
 import com.seedfinding.mcbiome.source.BiomeSource;
 import com.seedfinding.mcbiome.source.StaticNoiseSource;
-import kaptainwutax.mcutils.block.Block;
-import kaptainwutax.mcutils.rand.ChunkRand;
+import com.seedfinding.mccore.block.Block;
+import com.seedfinding.mccore.rand.ChunkRand;
 
 public class SwampSurfaceBuilder extends DefaultSurfaceBuilder {
 	public SwampSurfaceBuilder(SurfaceConfig surfaceConfig) {

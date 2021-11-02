@@ -3,9 +3,9 @@ package com.seedfinding.mcbiome.layer.water;
 import com.seedfinding.mcbiome.biome.Biome;
 import com.seedfinding.mcbiome.biome.Biomes;
 import com.seedfinding.mcbiome.layer.IntBiomeLayer;
-import kaptainwutax.mcutils.version.MCVersion;
-import kaptainwutax.noiseutils.perlin.PerlinNoiseSampler;
-import kaptainwutax.seedutils.rand.JRand;
+import com.seedfinding.mccore.version.MCVersion;
+import com.seedfinding.mcnoise.perlin.PerlinNoiseSampler;
+import com.seedfinding.mcseed.rand.JRand;
 
 public class OceanTemperatureLayer extends IntBiomeLayer {
 

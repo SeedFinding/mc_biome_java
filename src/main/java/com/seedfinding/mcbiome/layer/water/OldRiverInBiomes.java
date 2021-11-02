@@ -2,7 +2,7 @@ package com.seedfinding.mcbiome.layer.water;
 
 import com.seedfinding.mcbiome.biome.Biomes;
 import com.seedfinding.mcbiome.layer.IntBiomeLayer;
-import kaptainwutax.mcutils.version.MCVersion;
+import com.seedfinding.mccore.version.MCVersion;
 
 public class OldRiverInBiomes extends IntBiomeLayer {
 	// before the introduction of noise based rivers, river were based on the rare biomes

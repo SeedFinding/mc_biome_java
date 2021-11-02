@@ -3,8 +3,8 @@ package com.seedfinding.mcbiome.biome.surface.builder;
 import com.seedfinding.mcbiome.biome.Biome;
 import com.seedfinding.mcbiome.biome.surface.SurfaceConfig;
 import com.seedfinding.mcbiome.source.BiomeSource;
-import kaptainwutax.mcutils.block.Block;
-import kaptainwutax.mcutils.rand.ChunkRand;
+import com.seedfinding.mccore.block.Block;
+import com.seedfinding.mccore.rand.ChunkRand;
 
 public class ShatteredSavannaSurfaceBuilder extends DefaultSurfaceBuilder {
 	public ShatteredSavannaSurfaceBuilder(SurfaceConfig surfaceConfig) {

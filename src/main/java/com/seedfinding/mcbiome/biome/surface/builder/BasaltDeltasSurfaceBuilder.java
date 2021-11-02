@@ -2,10 +2,10 @@ package com.seedfinding.mcbiome.biome.surface.builder;
 
 import com.seedfinding.mcbiome.biome.surface.SurfaceConfig;
 import com.seedfinding.mcbiome.source.BiomeSource;
-import kaptainwutax.mcutils.block.Block;
-import kaptainwutax.mcutils.block.Blocks;
-import kaptainwutax.mcutils.util.data.Triplet;
-import kaptainwutax.noiseutils.perlin.OctavePerlinNoiseSampler;
+import com.seedfinding.mccore.block.Block;
+import com.seedfinding.mccore.block.Blocks;
+import com.seedfinding.mccore.util.data.Triplet;
+import com.seedfinding.mcnoise.perlin.OctavePerlinNoiseSampler;
 
 import java.util.Arrays;
 import java.util.Collections;

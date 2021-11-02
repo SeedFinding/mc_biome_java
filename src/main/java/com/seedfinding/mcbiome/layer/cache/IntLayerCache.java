@@ -1,6 +1,6 @@
 package com.seedfinding.mcbiome.layer.cache;
 
-import kaptainwutax.mathutils.util.Mth;
+import com.seedfinding.mcmath.util.Mth;
 
 import java.util.Arrays;
 

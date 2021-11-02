@@ -7,9 +7,9 @@ import com.seedfinding.mcbiome.layer.composite.VoronoiLayer;
 import com.seedfinding.mcbiome.layer.end.EndBiomeLayer;
 import com.seedfinding.mcbiome.layer.end.EndHeightLayer;
 import com.seedfinding.mcbiome.layer.end.EndSimplexLayer;
-import kaptainwutax.mcutils.state.Dimension;
-import kaptainwutax.mcutils.util.pos.BPos;
-import kaptainwutax.mcutils.version.MCVersion;
+import com.seedfinding.mccore.state.Dimension;
+import com.seedfinding.mccore.util.pos.BPos;
+import com.seedfinding.mccore.version.MCVersion;
 
 public class EndBiomeSource extends LayeredBiomeSource<BiomeLayer> {
 

@@ -4,8 +4,8 @@ import com.seedfinding.mcbiome.biome.BiomePoint;
 import com.seedfinding.mcbiome.biome.Biomes;
 import com.seedfinding.mcbiome.layer.composite.VoronoiLayer;
 import com.seedfinding.mcbiome.layer.noise.MultiNoiseLayer17;
-import kaptainwutax.mcutils.state.Dimension;
-import kaptainwutax.mcutils.version.MCVersion;
+import com.seedfinding.mccore.state.Dimension;
+import com.seedfinding.mccore.version.MCVersion;
 
 public class NetherBiomeSource extends MultiNoiseBiomeSource {
 

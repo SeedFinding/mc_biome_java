@@ -4,7 +4,7 @@ import com.seedfinding.mcbiome.biome.Biome;
 import com.seedfinding.mcbiome.biome.Biomes;
 import com.seedfinding.mcbiome.layer.composite.XCrossLayer;
 import com.seedfinding.mcbiome.layer.IntBiomeLayer;
-import kaptainwutax.mcutils.version.MCVersion;
+import com.seedfinding.mccore.version.MCVersion;
 
 public class MushroomLayer extends XCrossLayer {
 

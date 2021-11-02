@@ -1,10 +1,10 @@
 package com.seedfinding.mcbiome.layer.end;
 
 import com.seedfinding.mcbiome.layer.BoolBiomeLayer;
-import kaptainwutax.mcutils.version.MCVersion;
-import kaptainwutax.noiseutils.simplex.SimplexNoiseSampler;
-import kaptainwutax.seedutils.lcg.LCG;
-import kaptainwutax.seedutils.rand.JRand;
+import com.seedfinding.mccore.version.MCVersion;
+import com.seedfinding.mcnoise.simplex.SimplexNoiseSampler;
+import com.seedfinding.mcseed.lcg.LCG;
+import com.seedfinding.mcseed.rand.JRand;
 
 public class EndSimplexLayer extends BoolBiomeLayer {
 

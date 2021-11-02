@@ -1,10 +1,10 @@
 package com.seedfinding.mcbiome.source;
 
 import com.seedfinding.mcbiome.biome.Biome;
-import kaptainwutax.mcutils.state.Dimension;
-import kaptainwutax.mcutils.util.pos.BPos;
-import kaptainwutax.mcutils.version.MCVersion;
-import kaptainwutax.seedutils.rand.JRand;
+import com.seedfinding.mccore.state.Dimension;
+import com.seedfinding.mccore.util.pos.BPos;
+import com.seedfinding.mccore.version.MCVersion;
+import com.seedfinding.mcseed.rand.JRand;
 
 import java.util.Collection;
 import java.util.HashSet;

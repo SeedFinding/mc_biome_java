@@ -2,7 +2,7 @@ package com.seedfinding.mcbiome.layer.end;
 
 import com.seedfinding.mcbiome.layer.BoolBiomeLayer;
 import com.seedfinding.mcbiome.layer.FloatBiomeLayer;
-import kaptainwutax.mcutils.version.MCVersion;
+import com.seedfinding.mccore.version.MCVersion;
 
 public class EndHeightLayer extends FloatBiomeLayer {
 
