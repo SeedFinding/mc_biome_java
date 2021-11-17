@@ -4,25 +4,14 @@ import com.seedfinding.mcbiome.biome.Biome;
 import com.seedfinding.mcbiome.biome.Biomes;
 import com.seedfinding.mcbiome.layer.IntBiomeLayer;
 import com.seedfinding.mcbiome.layer.composite.VoronoiLayer;
-import com.seedfinding.mcbiome.layer.land.BambooJungleLayer;
-import com.seedfinding.mcbiome.layer.land.BaseBiomesLayer;
-import com.seedfinding.mcbiome.layer.land.ContinentLayer;
-import com.seedfinding.mcbiome.layer.land.HillsLayer;
-import com.seedfinding.mcbiome.layer.land.IslandLayer;
-import com.seedfinding.mcbiome.layer.land.LandLayer;
-import com.seedfinding.mcbiome.layer.land.MushroomLayer;
-import com.seedfinding.mcbiome.layer.land.SunflowerPlainsLayer;
+import com.seedfinding.mcbiome.layer.land.*;
 import com.seedfinding.mcbiome.layer.noise.NoiseLayer;
 import com.seedfinding.mcbiome.layer.scale.ScaleLayer;
 import com.seedfinding.mcbiome.layer.scale.SmoothScaleLayer;
 import com.seedfinding.mcbiome.layer.shore.EaseEdgeLayer;
 import com.seedfinding.mcbiome.layer.shore.EdgeBiomesLayer;
 import com.seedfinding.mcbiome.layer.temperature.ClimateLayer;
-import com.seedfinding.mcbiome.layer.water.DeepOceanLayer;
-import com.seedfinding.mcbiome.layer.water.NoiseToRiverLayer;
-import com.seedfinding.mcbiome.layer.water.OceanTemperatureLayer;
-import com.seedfinding.mcbiome.layer.water.OldRiverInBiomes;
-import com.seedfinding.mcbiome.layer.water.RiverLayer;
+import com.seedfinding.mcbiome.layer.water.*;
 import com.seedfinding.mccore.state.Dimension;
 import com.seedfinding.mccore.util.pos.BPos;
 import com.seedfinding.mccore.version.MCVersion;
@@ -31,10 +20,11 @@ import com.seedfinding.mccore.version.UnsupportedVersion;
 import java.util.function.BiFunction;
 
 public class OverworldBiomeSource extends LayeredBiomeSource<IntBiomeLayer> {
-	public final int biomeSize;
-	public final int riverSize;
-	public final boolean useDefault1_1;
+	public int biomeSize;
+	public int riverSize;
+	public boolean useDefault1_1;
 	public static final int DEFAULT_BIOME_SIZE = 4;
+	public static final int LARGE_BIOME_SIZE = 6;
 	public static final int DEFAULT_RIVER_SIZE = 4;
 	public IntBiomeLayer base;
 	public IntBiomeLayer ocean;
@@ -70,12 +60,49 @@ public class OverworldBiomeSource extends LayeredBiomeSource<IntBiomeLayer> {
 		this.build();
 	}
 
+	/**
+	 * Set the biome size and rebuild the full stack, other variables such as riverSize,
+	 * useDefault1_1, dimension, worldseed and version are not touched, everything else is fully rebuilt
+	 * (this also means that caching will be removed)
+	 */
+	public void setBiomeSize(int biomeSize) {
+		this.biomeSize = biomeSize;
+		this.build();
+	}
+
+	/**
+	 * Set the river size and rebuild the full stack, other variables such as biomeSize,
+	 * useDefault1_1, dimension, worldseed and version are not touched, everything else is fully rebuilt
+	 * (this also means that caching will be removed)
+	 */
+	public void setRiverSize(int riverSize) {
+		this.riverSize = riverSize;
+		this.build();
+	}
+
+	/**
+	 * Set the default1_1 boolean and rebuild the full stack, other variables such as riverSize,
+	 * biomeSize, dimension, worldseed and version are not touched, everything else is fully rebuilt
+	 * (this also means that caching will be removed)
+	 */
+	public void setUseDefault1_1(boolean useDefault1_1) {
+		this.useDefault1_1 = useDefault1_1;
+		this.build();
+	}
+
+	public void setLargeBiomeSize() {
+		this.biomeSize = LARGE_BIOME_SIZE;
+		this.build();
+	}
+
 	@Override
 	public Dimension getDimension() {
 		return Dimension.OVERWORLD;
 	}
 
 	protected void build() {
+		this.layers.clear();
+
 		BiFunction<Long, IntBiomeLayer, IntBiomeLayer> NORMAL_SCALE = (salt, parent) -> new ScaleLayer(this.getVersion(), this.getWorldSeed(), salt, ScaleLayer.Type.NORMAL, parent);
 
 		// first legacy stack
