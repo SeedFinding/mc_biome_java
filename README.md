@@ -1,3 +1,5 @@
+[![Build Status](https://jenkins.seedfinding.com/buildStatus/icon?job=mc_java%2Fmc_biome_java)](https://jenkins.seedfinding.com/job/mc_java/job/mc_biome_java/)
+
 # Minecraft Biome
 
 This library aims to give easy access to the different biomes generations of Minecraft. It is not direct copy of Minecraft
